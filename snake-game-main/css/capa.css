@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Silkscreen", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 30%;
+  font-size: 100px;
+  text-shadow: 2px 0 10px rgba(255, 255, 255, 0.61);
+}
+
+#snake {
+  background: url(../img/ezgif-5-70069df4f8.gif) center/cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 95vh;
+  filter: blur(15px);
+}
+
+#controles {
+  position: absolute;
+  bottom: 1vh;
+  left: 3vw;
+  width: 30%;
+}
+
+#controles img {
+  width: 100%;
+}
+
+#dificuldades {
+  position: absolute;
+  bottom: 20vh;
+  width: 30%;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
+#dificuldades button {
+  width: 100%;
+  height: 5vh;
+  margin-top: 10px;
+  background-color: green;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease 0.5s;
+
+}
+
+#dificuldades button:hover {
+  box-shadow: 2px 0 10px green;
+}

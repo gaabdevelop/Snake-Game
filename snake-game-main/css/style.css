@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppings", sans-serif;
+}
+
+body {
+  background-color: #191919;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  overflow: hidden;
+}
+
+canvas {
+  background-color: #111;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.score--value {
+  font-weight: 700;
+  font-size: 4.5rem;
+  display: block;
+  margin-top: -10px;
+}
+
+.menu-screen {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.game-over {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.final-score {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.btn-play {
+  border: none;
+  border-radius: 100px;
+  padding: 10px 15px 10px 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+#store {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: 191919;
+  width: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.upgrades {
+  width: 150px;
+  height: 80px;
+  background-color: 191919;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.upgrades button {
+  margin-top: 10px;
+  color: white;
+  height: 3vh;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#home {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+#home button {
+  font-size: 40px;
+  color: white;
+  background: none;
+  border: none;
+  font-family: "Silkscreen", sans-serif;
+  transition: ease 0.5s;
+}
+
+#home button:hover {
+  text-shadow: 1px 0 10px rgba(255, 255, 255, 0.644);
+}
